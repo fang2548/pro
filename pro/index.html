@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   ระบบค้นหาคดี
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <!-- ส่วนล็อกอิน -->
+  <div class="container" id="loginSection">
+   <h2>
+    เข้าสู่ระบบ
+   </h2>
+   <input id="username" placeholder="ชื่อผู้ใช้" type="text"/>
+   <input id="password" placeholder="รหัสผ่าน" type="password"/>
+   <button onclick="login()">
+    เข้าสู่ระบบ
+   </button>
+   <div class="error" id="loginError">
+   </div>
+  </div>
+  <!-- ส่วนค้นหา -->
+  <div class="container hidden" id="searchSection">
+   <h2>
+    ค้นหาคดี
+   </h2>
+   <input id="caseInput" placeholder="กรอกเลขคดี เช่น 12345" type="text"/>
+   <button onclick="searchCase()">
+    ค้นหา
+   </button>
+   <div class="result" id="result">
+   </div>
+   <button onclick="logout()" style="margin-top:20px; background:#e74c3c;">
+    ออกจากระบบ
+   </button>
+  </div>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
